@@ -1,0 +1,298 @@
+.hotel-details {
+    max-width: 1200px;
+    margin: 2rem auto;
+    padding: 0 1rem;
+}
+
+.hotel-gallery {
+    margin-bottom: 2rem;
+}
+
+.main-image {
+    width: 100%;
+    height: 400px;
+    margin-bottom: 1rem;
+    overflow: hidden;
+    position: relative;
+}
+
+.main-image img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    border-radius: 8px;
+    transition: transform 0.5s ease;
+}
+
+.main-image:hover img {
+    transform: scale(1.02);
+}
+
+.thumbnail-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(100px, 1fr));
+    gap: 1rem;
+}
+
+.thumbnail {
+    width: 100%;
+    height: 80px;
+    object-fit: cover;
+    border-radius: 4px;
+    cursor: pointer;
+    transition: all 0.3s ease;
+}
+
+.thumbnail:hover {
+    opacity: 0.9;
+    transform: scale(1.05);
+    box-shadow: 0 4px 8px rgba(0,0,0,0.2);
+}
+
+.hotel-info h1 {
+    font-size: 2rem;
+    color: var(--text-color);
+    margin-bottom: 0.5rem;
+}
+
+.location {
+    color: var(--text-color);
+    opacity: 0.8;
+    margin-bottom: 1rem;
+}
+
+.rating {
+    color: #ffd700;
+    font-size: 1.5rem;
+    margin-bottom: 1rem;
+}
+
+.description {
+    line-height: 1.6;
+    margin-bottom: 2rem;
+    color: var(--text-color);
+}
+
+.amenities-section,
+.contact-info {
+    margin-bottom: 2rem;
+}
+
+.amenities-section h2,
+.contact-info h2 {
+    color: var(--text-color);
+    margin-bottom: 1rem;
+}
+
+.amenities-list {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+    gap: 1rem;
+    list-style: none;
+}
+
+.amenities-list li {
+    padding: 0.5rem;
+    background: var(--card-bg);
+    border-radius: 4px;
+    border: 1px solid var(--border-color);
+}
+
+.booking-section {
+    background: var(--card-bg);
+    padding: 2rem;
+    border-radius: 8px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    border: 1px solid var(--border-color);
+}
+
+.price {
+    font-size: 1.5rem;
+    color: var(--text-color);
+    font-weight: bold;
+}
+
+.book-now-btn {
+    background-color: #2c3e50;
+    color: white;
+    border: none;
+    padding: 1rem 2rem;
+    border-radius: 4px;
+    cursor: pointer;
+    font-size: 1.1rem;
+    transition: background-color 0.2s;
+}
+
+.book-now-btn:hover {
+    background-color: #1a252f;
+}
+
+.main-image::after {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(0, 0, 0, 0.1);
+    opacity: 0;
+    transition: opacity 0.3s ease;
+    pointer-events: none;
+}
+
+.main-image:hover::after {
+    opacity: 1;
+}
+
+/* Room Types Section */
+.room-types {
+    margin-top: 3rem;
+}
+
+.room-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    gap: 2rem;
+    margin-top: 1.5rem;
+}
+
+.room-card {
+    border: 1px solid var(--border-color);
+    border-radius: 8px;
+    overflow: hidden;
+    background: var(--card-bg);
+}
+
+.room-card img {
+    width: 100%;
+    height: 200px;
+    object-fit: cover;
+}
+
+.room-info {
+    padding: 1.5rem;
+}
+
+.room-info h3 {
+    color: var(--text-color);
+    margin-bottom: 0.5rem;
+}
+
+.room-info p {
+    color: var(--text-color);
+    opacity: 0.8;
+    margin-bottom: 1rem;
+}
+
+.room-price {
+    font-size: 1.2rem;
+    font-weight: bold;
+    color: var(--text-color);
+    margin-bottom: 1rem;
+}
+
+.book-room-btn {
+    width: 100%;
+    padding: 0.8rem;
+    background-color: #2c3e50;
+    color: white;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
+
+.book-room-btn:hover {
+    background-color: var(--hover-color);
+}
+
+/* Hotel Policies */
+.hotel-policies {
+    margin-top: 3rem;
+}
+
+.policies-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+    gap: 2rem;
+    margin-top: 1.5rem;
+}
+
+.policy {
+    padding: 1.5rem;
+    background: var(--card-bg);
+    border: 1px solid var(--border-color);
+    border-radius: 8px;
+}
+
+.policy h3 {
+    color: var(--text-color);
+    margin-bottom: 0.5rem;
+}
+
+.policy p {
+    color: var(--text-color);
+    opacity: 0.8;
+}
+
+/* Amenities Grid */
+.amenities-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(150px, 1fr));
+    gap: 1rem;
+    margin-top: 1.5rem;
+}
+
+.amenity {
+    display: flex;
+    align-items: center;
+    gap: 0.5rem;
+    padding: 1rem;
+    background: var(--card-bg);
+    border: 1px solid var(--border-color);
+    border-radius: 8px;
+}
+
+.amenity-icon {
+    font-size: 1.5rem;
+}
+
+/* Contact Information */
+.contact-details {
+    margin-top: 1.5rem;
+}
+
+.contact-details p {
+    margin-bottom: 0.5rem;
+}
+
+.contact-details a {
+    color: var(--text-color);
+    text-decoration: none;
+}
+
+.contact-details a:hover {
+    text-decoration: underline;
+}
+
+.book-now-section {
+    margin-top: 2rem;
+    text-align: center;
+}
+
+.book-now-section .book-now-btn {
+    padding: 1rem 3rem;
+    font-size: 1.2rem;
+    background-color: #007bff;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
+
+.book-now-section .book-now-btn:hover {
+    background-color: #0056b3;
+} 

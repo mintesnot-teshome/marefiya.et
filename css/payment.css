@@ -1,0 +1,147 @@
+.payment-container {
+    max-width: 1200px;
+    margin: 2rem auto;
+    padding: 0 1rem;
+    display: grid;
+    grid-template-columns: 1fr 2fr;
+    gap: 2rem;
+}
+
+@media (max-width: 768px) {
+    .payment-container {
+        grid-template-columns: 1fr;
+    }
+}
+
+.booking-summary {
+    background: var(--card-bg);
+    padding: 2rem;
+    border-radius: 8px;
+    border: 1px solid var(--border-color);
+    height: fit-content;
+}
+
+.hotel-summary {
+    display: flex;
+    gap: 1rem;
+    margin: 1.5rem 0;
+    padding-bottom: 1.5rem;
+    border-bottom: 1px solid var(--border-color);
+}
+
+.hotel-summary img {
+    width: 100px;
+    height: 100px;
+    object-fit: cover;
+    border-radius: 4px;
+}
+
+.summary-details h3 {
+    color: var(--text-color);
+    margin-bottom: 0.5rem;
+}
+
+.summary-details p {
+    color: var(--text-color);
+    opacity: 0.8;
+    margin-bottom: 0.25rem;
+}
+
+.price-breakdown {
+    margin-top: 1.5rem;
+}
+
+.price-row {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 1rem;
+    color: var(--text-color);
+}
+
+.price-row.total {
+    border-top: 1px solid var(--border-color);
+    padding-top: 1rem;
+    font-weight: bold;
+    font-size: 1.1rem;
+}
+
+.payment-form {
+    background: var(--card-bg);
+    padding: 2rem;
+    border-radius: 8px;
+    border: 1px solid var(--border-color);
+}
+
+.form-group {
+    margin-bottom: 1.5rem;
+}
+
+.form-group label {
+    display: block;
+    margin-bottom: 0.5rem;
+    color: var(--text-color);
+}
+
+.form-group input {
+    width: 100%;
+    padding: 0.8rem;
+    border: 1px solid var(--border-color);
+    border-radius: 4px;
+    background: var(--bg-color);
+    color: var(--text-color);
+}
+
+.form-row {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 1rem;
+}
+
+.card-input-wrapper {
+    position: relative;
+}
+
+.card-icons {
+    position: absolute;
+    right: 0.8rem;
+    top: 50%;
+    transform: translateY(-50%);
+    display: flex;
+    gap: 0.5rem;
+}
+
+.card-icons i {
+    font-size: 1.5rem;
+    opacity: 0.5;
+}
+
+.payment-options {
+    margin: 2rem 0;
+}
+
+.option {
+    display: flex;
+    align-items: center;
+    gap: 0.5rem;
+    margin: 1rem 0;
+}
+
+.option label {
+    color: var(--text-color);
+}
+
+.pay-now-btn {
+    width: 100%;
+    padding: 1rem;
+    background-color: #2c3e50;
+    color: white;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    font-size: 1.1rem;
+    transition: background-color 0.3s;
+}
+
+.pay-now-btn:hover {
+    background-color: var(--hover-color);
+} 

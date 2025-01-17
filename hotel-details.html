@@ -1,0 +1,136 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Hotel Details - Marefiya</title>
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/hotel-details.css">
+    <script src="js/hotel-data.js"></script>
+</head>
+<body>
+    <header>
+        <nav>
+            <a href="index.html" class="logo">Marefiya</a>
+            <div class="nav-links">
+                <a href="index.html">Home</a>
+                <a href="hotels.html">Hotels</a>
+                <a href="login.html">Login</a>
+                <a href="register.html">Register</a>
+                <button id="theme-toggle" class="theme-toggle">
+                    <span class="sun">☀️</span>
+                    <span class="moon">🌙</span>
+                </button>
+            </div>
+        </nav>
+    </header>
+
+    <main class="hotel-details">
+        <div class="hotel-gallery">
+            <div class="main-image">
+                <img src="images/sheraton-addis.jpg" alt="Sheraton Addis" id="mainImage">
+            </div>
+            <div class="thumbnail-grid">
+                <img src="images/sheraton-addis.jpg" alt="Hotel View 1" class="thumbnail" onclick="changeImage(this.src)">
+                <img src="images/sheraton-room.jpg" alt="Hotel Room" class="thumbnail" onclick="changeImage(this.src)">
+                <img src="images/sheraton-pool.jpg" alt="Swimming Pool" class="thumbnail" onclick="changeImage(this.src)">
+                <img src="images/sheraton-restaurant.jpg" alt="Restaurant" class="thumbnail" onclick="changeImage(this.src)">
+            </div>
+        </div>
+
+        <div class="hotel-info">
+            <div class="hotel-header">
+                <h1>Sheraton Addis</h1>
+                <div class="rating">★★★★★</div>
+            </div>
+            <div class="location">
+                <i class="location-icon">📍</i>
+                Taitu Street, Addis Ababa, Ethiopia
+            </div>
+
+            <div class="price-info">
+                <div class="price">From 15,000 ETB/night</div>
+                <button class="book-now-btn">Book Now</button>
+            </div>
+
+            <div class="description">
+                <h2>About the Hotel</h2>
+                <p>Located in the heart of Ethiopia's capital, Sheraton Addis is a luxurious 5-star hotel offering world-class amenities and spectacular city views. The hotel features elegant rooms, multiple dining options, and extensive recreational facilities.</p>
+            </div>
+
+            <div class="amenities-section">
+                <h2>Amenities</h2>
+                <div class="amenities-grid">
+                    <div class="amenity">
+                        <span class="amenity-icon">🏊‍♂️</span>
+                        <span>Swimming Pool</span>
+                    </div>
+                    <div class="amenity">
+                        <span class="amenity-icon">🍽️</span>
+                        <span>Restaurant</span>
+                    </div>
+                    <div class="amenity">
+                        <span class="amenity-icon">💆‍♀️</span>
+                        <span>Spa</span>
+                    </div>
+                    <div class="amenity">
+                        <span class="amenity-icon">📶</span>
+                        <span>Free WiFi</span>
+                    </div>
+                    <div class="amenity">
+                        <span class="amenity-icon">🅿️</span>
+                        <span>Free Parking</span>
+                    </div>
+                    <div class="amenity">
+                        <span class="amenity-icon">🏋️‍♂️</span>
+                        <span>Fitness Center</span>
+                    </div>
+                </div>
+            </div>
+
+            <div class="room-types">
+                <h2>Room Types</h2>
+                <div class="room-grid">
+                    <div class="room-card">
+                        <img src="images/sheraton-deluxe.jpg" alt="Deluxe Room">
+                        <div class="room-info">
+                            <h3>Deluxe Room</h3>
+                            <p>Spacious room with city view</p>
+                            <div class="room-price">15,000 ETB/night</div>
+                            <button class="book-room-btn">Select Room</button>
+                        </div>
+                    </div>
+                    <div class="room-card">
+                        <img src="images/sheraton-suite.jpg" alt="Executive Suite">
+                        <div class="room-info">
+                            <h3>Executive Suite</h3>
+                            <p>Luxury suite with separate living area</p>
+                            <div class="room-price">25,000 ETB/night</div>
+                            <button class="book-room-btn">Select Room</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="book-now-section">
+                <button class="book-now-btn">Book Now</button>
+            </div>
+
+            <div class="contact-info">
+                <h2>Contact Information</h2>
+                <div class="contact-details">
+                    <p><strong>Phone:</strong> +251 11 517 1717</p>
+                    <p><strong>Email:</strong> info@sheratonaddis.com</p>
+                    <p><strong>Website:</strong> <a href="#">www.sheratonaddis.com</a></p>
+                </div>
+            </div>
+        </div>
+    </main>
+
+    <footer>
+        <p>&copy; 2024 Marefiya. All rights reserved.</p>
+    </footer>
+    <script src="js/theme.js"></script>
+    <script src="js/hotel-details.js"></script>
+</body>
+</html> 
