@@ -118,7 +118,7 @@
 
 /* Form validation styles */
 input:invalid {
-    border-color:rgb(158, 137, 137);
+    border-color:rgb(20, 78, 178);
 }
 
 input:valid {
