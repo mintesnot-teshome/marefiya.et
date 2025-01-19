@@ -110,7 +110,7 @@ a.logo:hover {
 
 /* Hero Section */
 .hero {
-    background: linear-gradient(rgba(0,0,0,0.5), rgba(0,0,0,0.5)), url('../images/ethiopia-bg.jpg');
+    background: linear-gradient(rgba(0,0,0,0.5), rgba(0,0,0,0.5)), url('../src/images/ethiopia-bg.jpg');
     background-size: cover;
     background-position: center;
     height: 500px;
@@ -459,3 +459,45 @@ footer {
 .hotel-card:hover::after {
     opacity: 1;
 } 
+
+.theme-toggle {
+    background: none;
+    border: none;
+    padding: 0;
+    cursor: pointer;
+    width: 24px;
+    height: 24px;
+    position: relative;
+    display: inline-flex;
+    align-items: center;
+    vertical-align: middle;
+    margin-left: 10px;
+    transform: translateY(-2px);
+}
+
+.sun-icon,
+.moon-icon {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: 24px;
+    height: 24px;
+    transition: opacity 0.2s ease-in-out;
+}
+
+.sun-icon {
+    opacity: 0;
+}
+
+.moon-icon {
+    opacity: 1;
+}
+
+[data-theme="dark"] .sun-icon {
+    opacity: 1;
+}
+
+[data-theme="dark"] .moon-icon {
+    opacity: 0;
+}
