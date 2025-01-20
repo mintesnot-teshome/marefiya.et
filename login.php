@@ -13,11 +13,11 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
     if ($email === $valid_email && $password === $valid_password) {
         $_SESSION['logged_in'] = true;
         $_SESSION['email'] = $email;
-        header("Location: index.html");
+        header("Location: / ");
         exit();
     } else {
-        header("Location: login.html?error=invalid");
+        header("Location: /login?error=invalid");
         exit();
     }
 }
-?> 
+?>

@@ -39,5 +39,6 @@
             <button class="book-now-btn">Book Now</button>
         </div>
     </div>
-</main>
-<?php require ('partials/footer.php') ?>
+    <main>
+
+        <?php require ('partials/footer.php') ?>

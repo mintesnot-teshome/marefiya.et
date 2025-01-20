@@ -55,7 +55,7 @@
                     <div class="rating">★★★★★</div>
                     <p class="amenities">WiFi • Pool • Spa • Restaurant</p>
                 </div>
-                <a href="hotel-details.html?hotel=sheraton-addis" class="view-details-btn">View Details</a>
+                <a href="/hotel-details?hotel=sheraton-addis" class="view-details-btn">View Details</a>
             </div>
             <div class="hotel-card">
                 <img src="src/images/hyatt-addis.jpg" alt="Hyatt Regency">
@@ -66,7 +66,7 @@
                     <div class="rating">★★★★★</div>
                     <p class="amenities">WiFi • Pool • Restaurant</p>
                 </div>
-                <a href="hotel-details.html?hotel=hyatt-addis" class="view-details-btn">View Details</a>
+                <a href="/hotel-details?hotel=hyatt-addis" class="view-details-btn">View Details</a>
             </div>
             <div class="hotel-card">
                 <img src="/src/images/kuriftu-resort.jpg" alt="Kuriftu Resort">
@@ -114,7 +114,7 @@
             </div>
         </div>
         <div class="view-all">
-            <a href="hotels.html" class="view-all-btn">View More Hotels</a>
+            <a href="/hotels" class="view-all-btn">View More Hotels</a>
             <p>Discover our complete collection of hotels across Ethiopia</p>
         </div>
     </section>
