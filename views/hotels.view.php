@@ -82,7 +82,7 @@
             <div class="hotel-grid">
                 <!-- Hotel cards will be dynamically loaded here with the same URL format -->
                 <!-- Example of how the JavaScript should format the links: -->
-                <a href="hotel-details.html?hotel=${hotelId}" class="view-details-btn">View Details</a>
+                <a href="hotel-details/hotel=${hotelId}" class="view-details-btn">View Details</a>
             </div>
         </section>
     </div>

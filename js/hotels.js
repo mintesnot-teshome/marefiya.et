@@ -18,7 +18,7 @@ document.addEventListener('DOMContentLoaded', function() {
             location: 'Addis Ababa',
             price: 15000,
             rating: 5,
-            image: 'images/sheraton-addis.jpg',
+            image: 'src/images/sheraton-addis.jpg',
             amenities: ['wifi', 'pool', 'spa', 'restaurant']
         },
         {
@@ -27,7 +27,7 @@ document.addEventListener('DOMContentLoaded', function() {
             location: 'Addis Ababa',
             price: 12000,
             rating: 5,
-            image: 'images/hyatt-addis.jpg',
+            image: 'src/images/hyatt-addis.jpg',
             amenities: ['wifi', 'pool', 'restaurant']
         },
         {
@@ -36,7 +36,7 @@ document.addEventListener('DOMContentLoaded', function() {
             location: 'Bahir Dar',
             price: 8000,
             rating: 4,
-            image: 'images/kuriftu-resort.jpg',
+            image: 'src/images/kuriftu-resort.jpg',
             amenities: ['wifi', 'pool', 'spa']
         },
         {
@@ -45,7 +45,7 @@ document.addEventListener('DOMContentLoaded', function() {
             location: 'Gondar',
             price: 5000,
             rating: 4,
-            image: 'images/goha-hotel.jpg',
+            image: 'src/images/goha-hotel.jpg',
             amenities: ['wifi', 'restaurant']
         },
         {
@@ -54,7 +54,7 @@ document.addEventListener('DOMContentLoaded', function() {
             location: 'Hawassa',
             price: 6500,
             rating: 4,
-            image: 'images/haile-resort-hawassa.jpg',
+            image: 'src/images/haile-resort-hawassa.jpg',
             amenities: ['wifi', 'pool', 'restaurant']
         },
         {
@@ -63,7 +63,7 @@ document.addEventListener('DOMContentLoaded', function() {
             location: 'Lalibela',
             price: 4500,
             rating: 4,
-            image: 'images/maribela-lalibela.jpg',
+            image: 'src/images/maribela-lalibela.jpg',
             amenities: ['wifi', 'restaurant']
         },
         {
@@ -72,7 +72,7 @@ document.addEventListener('DOMContentLoaded', function() {
             location: 'Wolaita Sodo',
             price: 3500,
             rating: 4,
-            image: 'lewi-resort.jpg',
+            image: 'src/images/lewi-resort.jpg',
             amenities: ['WiFi', 'Restaurant', 'Conference Hall'],
             description: 'Nestled in the heart of Wolaita Sodo, offering modern amenities and traditional hospitality.',
             filters: {
