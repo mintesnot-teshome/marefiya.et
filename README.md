@@ -10,7 +10,6 @@ Marefiya is a web-based hotel booking system that allows users to easily book ho
 - CSS3
 - JavaScript
 - PHP
-- MySQL
 
 ## Features
 
@@ -38,7 +37,6 @@ Marefiya is a web-based hotel booking system that allows users to easily book ho
    - Complete the booking process
 
 2. **For Administrators:**
-   - Log in to the admin panel
    - Manage bookings and room inventory
    - Handle user requests
    - Generate reports
