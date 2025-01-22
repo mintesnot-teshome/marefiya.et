@@ -14,7 +14,7 @@
                 <i class="fab fa-linkedin"></i> LinkedIn
             </a>
         </div>
-        <p>&copy; 2024 Marefiya. All rights reserved.</p>
+        <p>&copy; <?php echo date('Y'); ?> Marefiya. All rights reserved.</p>
     </div>
 </footer>
 <script src="/js/theme.js"></script>
