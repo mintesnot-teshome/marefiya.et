@@ -10,7 +10,7 @@ document.addEventListener('DOMContentLoaded', function() {
     // Get hotel data
     const hotel = hotels[hotelId];
     if (!hotel) {
-        window.location.href = 'hotels.html';
+        window.location.href = '/hotels';
         return;
     }
 

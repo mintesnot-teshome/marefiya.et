@@ -16,7 +16,7 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
     
     // For this example, we'll just redirect to login
     $_SESSION['registration_success'] = true;
-    header("Location: login.html");
+    header("Location: /login");
     exit();
 }
-?> 
+?>

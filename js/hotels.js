@@ -95,7 +95,7 @@ document.addEventListener('DOMContentLoaded', function() {
                     <p class="amenities">${hotel.amenities.join(' • ')}</p>
                 </div>
                 <div class="hotel-actions">
-                    <a href="hotel-details.html?hotel=${hotel.id}" class="view-details-btn">View Details</a>
+                    <a href="/hotel-details?hotel=${hotel.id}" class="view-details-btn">View Details</a>
                     <button class="book-now-btn" data-hotel="${hotel.id}" data-price="${hotel.price}">Book Now</button>
                 </div>
             </div>
@@ -113,7 +113,7 @@ document.addEventListener('DOMContentLoaded', function() {
                 const checkIn = '2024-02-20'; // Default date
                 const checkOut = '2024-02-22'; // Default date
 
-                window.location.href = `payment.html?hotel=${hotelName}&price=${price}&checkin=${checkIn}&checkout=${checkOut}`;
+                window.location.href = '/payment?hotel=${hotelName}&price=${price}&checkin=${checkIn}&checkout=${checkOut}';
             });
         });
     }

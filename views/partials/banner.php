@@ -1,6 +1,6 @@
 <header>
     <nav>
-        <a href="index.html" class="logo">Marefiya.ET</a>
+        <a href="/" class="logo">Marefiya.ET</a>
         <div class="nav-links">
             <a href="/">Home</a>
             <a href="/hotels">Hotels</a>

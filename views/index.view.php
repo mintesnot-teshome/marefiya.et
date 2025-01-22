@@ -77,7 +77,7 @@
                     <div class="rating">★★★★</div>
                     <p class="amenities">WiFi • Pool • Spa</p>
                 </div>
-                <a href="hotel-details.html?hotel=kuriftu-resort" class="view-details-btn">View Details</a>
+                <a href="/hotel-details?hotel=kuriftu-resort" class="view-details-btn">View Details</a>
             </div>
             <div class="hotel-card">
                 <img src="/src/images/haile-resort-hawassa.jpg" alt="Haile Resort">
@@ -88,7 +88,7 @@
                     <div class="rating">★★★★</div>
                     <p class="amenities">WiFi • Pool • Restaurant</p>
                 </div>
-                <a href="hotel-details.html?hotel=haile-resort" class="view-details-btn">View Details</a>
+                <a href="/hotel-details?hotel=haile-resort" class="view-details-btn">View Details</a>
             </div>
             <div class="hotel-card">
                 <img src="/src/images/maribela-lalibela.jpg" alt="Maribela Hotel">
@@ -99,7 +99,7 @@
                     <div class="rating">★★★★</div>
                     <p class="amenities">WiFi • Restaurant</p>
                 </div>
-                <a href="hotel-details.html?hotel=maribela-hotel" class="view-details-btn">View Details</a>
+                <a href="/hotel-details?hotel=maribela-hotel" class="view-details-btn">View Details</a>
             </div>
             <div class="hotel-card">
                 <img src="/src/images/lewi-resort.jpg" alt="Lewi Hotels and Resorts">
@@ -110,7 +110,7 @@
                     <div class="rating">★★★★</div>
                     <p class="amenities">WiFi • Restaurant • Conference Hall</p>
                 </div>
-                <a href="hotel-details.html?hotel=lewi-resort" class="view-details-btn">View Details</a>
+                <a href="/hotel-details?hotel=lewi-resort" class="view-details-btn">View Details</a>
             </div>
         </div>
         <div class="view-all">

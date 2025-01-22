@@ -101,7 +101,7 @@ document.addEventListener('DOMContentLoaded', function() {
     // Get hotel data
     const hotel = hotelData[hotelId];
     if (!hotel) {
-        window.location.href = 'hotels.html';
+        window.location.href = '/hotels';
         return;
     }
 
@@ -137,7 +137,7 @@ document.addEventListener('DOMContentLoaded', function() {
     // Add event listener to book now button
     const bookNowBtn = document.querySelector('.book-now-btn');
     bookNowBtn.addEventListener('click', function() {
-        window.location.href = `payment.html?hotel=${hotelId}&price=${hotel.price}`;
+        window.location.href = '/payment?hotel=${hotelId}&price=${hotel.price}';
     });
 });
 

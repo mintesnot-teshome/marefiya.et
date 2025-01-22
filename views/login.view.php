@@ -14,7 +14,7 @@
             </div>
             <button type="submit" class="auth-btn">Login</button>
         </form>
-        <p>Don't have an account? <a href="register.html">Register here</a></p>
+        <p>Don't have an account? <a href="/register">Register here</a></p>
     </div>
 </main>
 <?php require('partials/footer.php') ?>

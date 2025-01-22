@@ -7,7 +7,7 @@ if ($_SERVER["REQUEST_METHOD"] == "GET") {
     $checkOut = $_GET['check-out'];
     $rooms = $_GET['rooms'];
     $guests = $_GET['guests'];
-    
+
     // In a real application, you would search in a database
     // For this example, we'll use hardcoded hotel data
     $hotels = [
@@ -30,9 +30,8 @@ if ($_SERVER["REQUEST_METHOD"] == "GET") {
             // Add more hotels...
         ]
     ];
-    
+
     // Return results as JSON
     header('Content-Type: application/json');
     echo json_encode($hotels[$location] ?? []);
 }
-?> 
