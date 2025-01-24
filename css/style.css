@@ -536,7 +536,8 @@ footer {
         [data-theme="dark"] .moon-icon {
             opacity: 0;
         }
-
-.search-results{
-    padding: 1.5rem;
+   
+#search-text{
+    line-height: 3;
+    text-align: center;
 }

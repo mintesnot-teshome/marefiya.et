@@ -1,44 +1,61 @@
 <?php require ('partials/head.php') ?>
 <?php require ('partials/banner.php') ?>
+
 <main class="hotel-details">
-    <div class="hotel-gallery">
+    <section class="hotel-gallery">
         <div class="main-image">
-            <img src="images/<?php echo $hotel['images'][0]; ?>" alt="<?php echo $hotel['name']; ?>">
+            <img id="mainImage" src="/src/images/<?= $hotel['images'][0] ?>" alt="<?= $hotel['name'] ?>">
         </div>
         <div class="thumbnail-grid">
             <?php foreach ($hotel['images'] as $image): ?>
-            <img src="images/<?php echo $image; ?>" alt="<?php echo $hotel['name']; ?>" class="thumbnail">
+                <img src="/src/images/<?= $image ?>" alt="<?= $hotel['name'] ?>" class="thumbnail" onclick="changeImage('/src/images/<?= $image ?>')">
             <?php endforeach; ?>
         </div>
-    </div>
+    </section>
 
-    <div class="hotel-info">
-        <h1><?php echo $hotel['name']; ?></h1>
-        <div class="location"><?php echo $hotel['location']; ?></div>
-        <div class="rating"><?php echo str_repeat('★', $hotel['rating']); ?></div>
-        <p class="description"><?php echo $hotel['description']; ?></p>
+    <section class="hotel-info">
+        <h1><?= $hotel['name'] ?></h1>
+        <p class="location">📍 <?= $hotel['location'] ?></p>
+        <div class="rating"><?= str_repeat('★', $hotel['rating']) ?></div>
+        <p class="price">From <?= number_format($hotel['price']) ?> ETB/night</p>
+        
+        <div class="description">
+            <p><?= $hotel['description'] ?></p>
+        </div>
 
         <div class="amenities-section">
             <h2>Amenities</h2>
-            <ul class="amenities-list">
+            <div class="amenities-grid">
                 <?php foreach ($hotel['amenities'] as $amenity): ?>
-                <li><?php echo $amenity; ?></li>
+                    <div class="amenity">
+                        <span class="amenity-icon"><?= $amenity['icon'] ?></span>
+                        <span><?= $amenity['name'] ?></span>
+                    </div>
                 <?php endforeach; ?>
-            </ul>
+            </div>
         </div>
 
         <div class="contact-info">
             <h2>Contact Information</h2>
-            <p><strong>Address:</strong> <?php echo $hotel['address']; ?></p>
-            <p><strong>Phone:</strong> <?php echo $hotel['phone']; ?></p>
-            <p><strong>Email:</strong> <?php echo $hotel['email']; ?></p>
+            <div class="contact-details">
+                <p><strong>Phone:</strong> <?= $hotel['contact']['phone'] ?></p>
+                <p><strong>Email:</strong> <?= $hotel['contact']['email'] ?></p>
+                <p><strong>Website:</strong> <a href="https://<?= $hotel['contact']['website'] ?>" target="_blank"><?= $hotel['contact']['website'] ?></a></p>
+            </div>
         </div>
 
-        <div class="booking-section">
-            <div class="price">From <?php echo number_format($hotel['price']); ?> ETB/night</div>
+        <div class="book-now-section">
             <button class="book-now-btn">Book Now</button>
         </div>
-    </div>
-    <main>
+    </section>
+</main>
 
-        <?php require ('partials/footer.php') ?>
+<script>
+function changeImage(src) {
+    document.getElementById('mainImage').src = src;
+}
+
+const hotelData = <?= json_encode($hotel) ?>;
+</script>
+
+<?php require ('partials/footer.php') ?>

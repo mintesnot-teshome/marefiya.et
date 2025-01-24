@@ -4,8 +4,11 @@ function searchHotels() {
     // Get search parameter
     $location = $_GET['location'] ?? '';
 
-    // For now, we'll just filter by location since we don't have a database
-    $hotels = [
+    // Get all hotels data
+    $hotels = require 'data/hotels.php';
+    
+    // Filter hotels by location
+    $locationMap = [
         'addis-ababa' => ['sheraton-addis', 'hyatt-addis'],
         'bahir-dar' => ['kuriftu-resort'],
         'gondar' => ['goha-hotel'],
@@ -14,10 +17,13 @@ function searchHotels() {
         'wolaita-sodo' => ['lewi-resort']
     ];
 
-    // Return matching hotels or all hotels if no location specified
-    $matchingHotels = !empty($location) ? ($hotels[$location] ?? []) : array_merge(...array_values($hotels));
+    // Get matching hotel IDs
+    $matchingHotelIds = !empty($location) ? ($locationMap[$location] ?? []) : array_keys($hotels);
     
+    // Get matching hotels data
+    $matchingHotels = array_intersect_key($hotels, array_flip($matchingHotelIds));
     if (isset($matchingHotels)) {
         require 'views/search.view.php';
     }
+    
 }

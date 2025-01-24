@@ -17,6 +17,44 @@
         <p>&copy; <?php echo date('Y'); ?> Marefiya. All rights reserved.</p>
     </div>
 </footer>
+
+<!-- Add the theme toggle button -->
+<button class="theme-toggle" onclick="toggleTheme()">
+    <i class="fas fa-moon"></i>
+</button>
+
+<!-- Add the theme toggle script -->
+<script>
+function toggleTheme() {
+    const body = document.body;
+    const icon = document.querySelector('.theme-toggle i');
+    
+    if (body.classList.contains('dark-theme')) {
+        body.classList.remove('dark-theme');
+        icon.classList.remove('fa-sun');
+        icon.classList.add('fa-moon');
+        localStorage.setItem('theme', 'light');
+    } else {
+        body.classList.add('dark-theme');
+        icon.classList.remove('fa-moon');
+        icon.classList.add('fa-sun');
+        localStorage.setItem('theme', 'dark');
+    }
+}
+
+// Check saved theme preference
+document.addEventListener('DOMContentLoaded', () => {
+    const savedTheme = localStorage.getItem('theme');
+    const icon = document.querySelector('.theme-toggle i');
+    
+    if (savedTheme === 'dark') {
+        document.body.classList.add('dark-theme');
+        icon.classList.remove('fa-moon');
+        icon.classList.add('fa-sun');
+    }
+});
+</script>
+
 <script src="/js/theme.js"></script>
 <script src="/js/script.js"></script>
 <script src="/js/hotel-data.js"></script>
