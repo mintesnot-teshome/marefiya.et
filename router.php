@@ -10,6 +10,7 @@ $routes = [
     '/register' => 'controllers/register.php',
     '/hotels' => 'controllers/hotels.php',
     '/hotel-details' => 'controllers/hotel-details.php',
+    '/search' => 'controllers/search.php',
 ];
 
 function routeToController($uri, $routes)

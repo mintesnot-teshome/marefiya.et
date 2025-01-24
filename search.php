@@ -1,37 +1,23 @@
 <?php
-session_start();
 
-if ($_SERVER["REQUEST_METHOD"] == "GET") {
-    $location = $_GET['location'];
-    $checkIn = $_GET['check-in'];
-    $checkOut = $_GET['check-out'];
-    $rooms = $_GET['rooms'];
-    $guests = $_GET['guests'];
+function searchHotels() {
+    // Get search parameter
+    $location = $_GET['location'] ?? '';
 
-    // In a real application, you would search in a database
-    // For this example, we'll use hardcoded hotel data
+    // For now, we'll just filter by location since we don't have a database
     $hotels = [
-        'addis-ababa' => [
-            [
-                'name' => 'Sheraton Addis',
-                'price' => 200,
-                'rating' => 5,
-                'image' => 'images/sheraton.jpg'
-            ],
-            // Add more hotels...
-        ],
-        'bahir-dar' => [
-            [
-                'name' => 'Kuriftu Resort',
-                'price' => 150,
-                'rating' => 4,
-                'image' => 'images/kuriftu.jpg'
-            ],
-            // Add more hotels...
-        ]
+        'addis-ababa' => ['sheraton-addis', 'hyatt-addis'],
+        'bahir-dar' => ['kuriftu-resort'],
+        'gondar' => ['goha-hotel'],
+        'hawassa' => ['haile-resort'],
+        'lalibela' => ['maribela-hotel'],
+        'wolaita-sodo' => ['lewi-resort']
     ];
 
-    // Return results as JSON
-    header('Content-Type: application/json');
-    echo json_encode($hotels[$location] ?? []);
+    // Return matching hotels or all hotels if no location specified
+    $matchingHotels = !empty($location) ? ($hotels[$location] ?? []) : array_merge(...array_values($hotels));
+    
+    if (isset($matchingHotels)) {
+        require 'views/search.view.php';
+    }
 }

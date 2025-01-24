@@ -5,7 +5,7 @@
     <section class="hero">
         <h1>Find Your Perfect Stay in Ethiopia</h1>
         <div class="search-container">
-            <form action="search.php" method="GET">
+            <form action="/search" method="GET">
                 <div class="search-grid">
                     <div class="search-item">
                         <label for="location">Location</label>
