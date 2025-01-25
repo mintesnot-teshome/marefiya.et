@@ -58,6 +58,28 @@
                 <a href="/hotel-details?hotel=sheraton-addis" class="view-details-btn">View Details</a>
             </div>
             <div class="hotel-card">
+                <img src="src/images/central-jimma-hotel.jpg" alt="Central Jimma Hotel">
+                <h3>Central Jimma Hotel</h3>
+                <p>Jimma</p>
+                <p class="price">From 3,000 ETB/night</p>
+                <div class="hotel-preview">
+                    <div class="rating">★★★</div>
+                    <p class="amenities">Restaurant • Free WiFi • Free Parking</p>
+                </div>
+                <a href="/hotel-details?hotel=central-jimma-hotel" class="view-details-btn">View Details</a>
+            </div>
+            <div class="hotel-card">
+                <img src="/src/images/haile-resort-hawassa.jpg" alt="Haile Resort">
+                <h3>Haile Resort</h3>
+                <p>Hawassa</p>
+                <p class="price">From 6,500 ETB/night</p>
+                <div class="hotel-preview">
+                    <div class="rating">★★★★</div>
+                    <p class="amenities">WiFi • Pool • Restaurant</p>
+                </div>
+                <a href="/hotel-details?hotel=haile-resort" class="view-details-btn">View Details</a>
+            </div>
+            <div class="hotel-card">
                 <img src="src/images/hyatt-addis.jpg" alt="Hyatt Regency">
                 <h3>Hyatt Regency</h3>
                 <p>Addis Ababa</p>
@@ -80,43 +102,22 @@
                 <a href="/hotel-details?hotel=kuriftu-resort" class="view-details-btn">View Details</a>
             </div>
             <div class="hotel-card">
-                <img src="/src/images/haile-resort-hawassa.jpg" alt="Haile Resort">
-                <h3>Haile Resort</h3>
-                <p>Hawassa</p>
-                <p class="price">From 6,500 ETB/night</p>
-                <div class="hotel-preview">
-                    <div class="rating">★★★★</div>
-                    <p class="amenities">WiFi • Pool • Restaurant</p>
-                </div>
-                <a href="/hotel-details?hotel=haile-resort" class="view-details-btn">View Details</a>
-            </div>
-            <div class="hotel-card">
-                <img src="/src/images/maribela-lalibela.jpg" alt="Maribela Hotel">
-                <h3>Maribela Hotel</h3>
-                <p>Lalibela</p>
-                <p class="price">From 4,500 ETB/night</p>
-                <div class="hotel-preview">
-                    <div class="rating">★★★★</div>
-                    <p class="amenities">WiFi • Restaurant</p>
-                </div>
-                <a href="/hotel-details?hotel=maribela-hotel" class="view-details-btn">View Details</a>
-            </div>
-            <div class="hotel-card">
-                <img src="/src/images/lewi-resort.jpg" alt="Lewi Hotels and Resorts">
-                <h3>Lewi Hotels and Resorts</h3>
-                <p>Wolaita Sodo</p>
+                <img src="src/images/paradise-lodge.jpg" alt="Paradias Lodge">
+                <h3>Paradias Lodge</h3>
+                <p>Arba Minch</p>
                 <p class="price">From 3,500 ETB/night</p>
                 <div class="hotel-preview">
                     <div class="rating">★★★★</div>
-                    <p class="amenities">WiFi • Restaurant • Conference Hall</p>
+                    <p class="amenities">Restaurant • Free WiFi • Free Parking • Swimming Pool</p>
                 </div>
-                <a href="/hotel-details?hotel=lewi-resort" class="view-details-btn">View Details</a>
+                <a href="/hotel-details?hotel=paradise-lodge" class="view-details-btn">View Details</a>
             </div>
         </div>
         <div class="view-all">
             <a href="/hotels" class="view-all-btn">View More Hotels</a>
             <p>Discover our complete collection of hotels across Ethiopia</p>
         </div>
+
     </section>
 </main>
 <?php require ('partials/footer.php') ?>

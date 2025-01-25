@@ -140,5 +140,61 @@ return [
             'email' => 'info@lewihotels.com',
             'website' => 'www.lewihotels.com'
         ]
+        ],
+    'central-jimma-hotel' => [
+        'name' => 'Central Jimma Hotel',
+        'location' => 'Jimma',
+        'price' => 3000,
+        'rating' => 3,
+        'description' => 'Central Jimma Hotel provides comfortable and affordable accommodations in the heart of Jimma, with easy access to local attractions.',
+        'images' => ['central-jimma-hotel.jpg', 'jimma-room-1.jpg', 'jimma-restaurant-1.jpg'],
+        'amenities' => [
+            ['icon' => '🍽️', 'name' => 'Restaurant'],
+            ['icon' => '📶', 'name' => 'Free WiFi'],
+            ['icon' => '🅿️', 'name' => 'Free Parking']
+        ],
+        'contact' => [
+            'phone' => '+251 47 111 2222',
+            'email' => 'info@centraljimmahotel.com',
+            'website' => 'www.centraljimmahotel.com'
+        ]
+    ],
+    'awetu-grand-hotel' =>[
+        'name' => 'Awetu Grand Hotel',
+        'location' => 'Jimma',
+        'price' => 3500,
+        'rating' => 4,
+        'description' => 'Awetu Grand Hotel in Jimma offers luxurious accommodations with top-notch amenities, including a swimming pool and fine dining options.',
+        'images' => ['awetu-grand-hotel.jpg', 'jimma-room-2.jpg', 'jimma-restaurant-2.jpg'],
+        'amenities' => [
+            ['icon' => '🍽️', 'name' => 'Restaurant'],
+            ['icon' => '📶', 'name' => 'Free WiFi'],
+            ['icon' => '🅿️', 'name' => 'Free Parking'],
+            ['icon' => '🏊', 'name' => 'Swimming Pool']
+        ],
+        'contact' => [
+            'phone' => '+251 47 333 4444',
+            'email' => 'info@awetu-grand-hotel.com',
+            'website' => 'www.awetu-grand-hotel.com'
+        ]
+    ],
+    'paradise-lodge' => [
+        'name' => 'Paradise Lodge',
+        'location' => 'Arba Minch',
+        'price' => 4000,
+        'rating' => 4,
+        'description' => 'Paradise Lodge offers a serene escape with stunning views of Lake Chamo and Lake Abaya, providing modern amenities and traditional hospitality.',
+        'images' => ['paradise-lodge.jpg', 'arba-minch-room.jpg', 'arba-minch-restaurant.jpg'],
+        'amenities' => [
+            ['icon' => '🍽️', 'name' => 'Restaurant'],
+            ['icon' => '📶', 'name' => 'Free WiFi'],
+            ['icon' => '🅿️', 'name' => 'Free Parking'],
+            ['icon' => '🌄', 'name' => 'Lake View']
+        ],
+        'contact' => [
+            'phone' => '+251 46 777 8888',
+            'email' => 'info@paradise-lodge.com',
+            'website' => 'www.paradise-lodge.com'
+        ]
     ]
 ]; 

@@ -14,7 +14,9 @@ function searchHotels() {
         'gondar' => ['goha-hotel'],
         'hawassa' => ['haile-resort'],
         'lalibela' => ['maribela-hotel'],
-        'wolaita-sodo' => ['lewi-resort']
+        'wolaita-sodo' => ['lewi-resort'],
+        'jimma' => ['paradise-lodge', 'awetu-grand-hotel'],
+        'arba-minch' => ['paradise-lodge']
     ];
 
     // Get matching hotel IDs

@@ -78,13 +78,25 @@
                     <option value="rating">Rating</option>
                 </select>
             </div>
+            <?php $hotels=require 'data/hotels.php' ; ?>
+            < <div class="hotel-grid">
+                <?php foreach ($hotels as $hotelId => $hotel): ?>
+                <div class="hotel-card">
+                    <img src="/src/images/<?= $hotel['images'][0] ?>" alt="<?= $hotel['name'] ?>">
+                    <h3><?= $hotel['name'] ?></h3>
+                    <p><?= $hotel['location'] ?></p>
+                    <p class="price">From <?= number_format($hotel['price']) ?> ETB/night</p>
+                    <div class="hotel-preview">
+                        <div class="rating"><?= str_repeat('★', $hotel['rating']) ?></div>
+                        <p class="amenities">
+                            <?= implode(' • ', array_column(array_slice($hotel['amenities'], 0, 3), 'name')) ?></p>
+                    </div>
+                    <a href="/hotel-details?hotel=<?= $hotelId ?>" class="view-details-btn">View Details</a>
+                </div>
+                <?php endforeach; ?>
+    </div>
 
-            <div class="hotel-grid">
-                <!-- Hotel cards will be dynamically loaded here with the same URL format -->
-                <!-- Example of how the JavaScript should format the links: -->
-                <a href="hotel-details/hotel=${hotelId}" class="view-details-btn">View Details</a>
-            </div>
-        </section>
+    </section>
     </div>
 </main>
 <?php require ('partials/footer.php') ?>

@@ -83,7 +83,7 @@ document.addEventListener('DOMContentLoaded', function() {
         }
     ];
 
-    function renderHotelCard(hotel) {
+    /* function renderHotelCard(hotel) {
         return `
             <div class="hotel-card">
                 <img src="${hotel.image}" alt="${hotel.name}">
@@ -100,7 +100,7 @@ document.addEventListener('DOMContentLoaded', function() {
                 </div>
             </div>
         `;
-    }
+    } */
 
     function renderHotels(hotels) {
         hotelGrid.innerHTML = hotels.map(hotel => renderHotelCard(hotel)).join('');
