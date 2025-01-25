@@ -65,7 +65,8 @@ a.logo:hover {
     text-decoration: none;
     color: var(--text-color);
     margin-left: 2rem;
-    font-weight: 500;
+    font-weight: 520;
+
 }
 
 /* Hero Section */
@@ -423,16 +424,17 @@ footer {
 .theme-toggle {
     background: none;
     border: none;
-    padding: 0;
     cursor: pointer;
-    width: 24px;
+    width: 64px;
     height: 24px;
-    position: relative;
+    position: absolute;
+    right: 64px;
     display: inline-flex;
-    align-items: center;
+    align-items:center;
     vertical-align: middle;
     margin-left: 10px;
     transform: translateY(-2px);
+
 }
 
 .sun-icon,
