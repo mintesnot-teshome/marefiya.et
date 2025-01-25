@@ -25,8 +25,6 @@
 
 <script src="/js/theme.js"></script>
 <script src="/js/script.js"></script>
-<script src="/js/hotel-data.js"></script>
-<script src="/js/hotel-details.js"></script>
 <script src="/js/hotels.js"></script>
 </body>
 
