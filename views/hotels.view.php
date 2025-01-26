@@ -1,11 +1,6 @@
 <?php require 'partials/head.php' ?>
 <?php require 'partials/banner.php' ?>
-<?php require 'filter-hotels.php'; 
-        // Get all hotels
-        $allHotels = require 'data/hotels.php';
-
-        // Get filtered and sorted hotels
-        $hotels = filterAndSortHotels($allHotels);?>
+<?php require 'filter-hotels.php' ?>
 
 <main>
     <div class="hotels-container">
@@ -101,4 +96,3 @@
 </main>
 
 <?php require 'partials/footer.php' ?>
-<script src="js/hotels.js"></script>

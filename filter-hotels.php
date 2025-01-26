@@ -1,4 +1,5 @@
 <?php
+
 // Filter form partial
 $locations = [
     'addis-ababa' => 'Addis Ababa',
@@ -62,4 +63,8 @@ function filterAndSortHotels($allHotels) {
 
     return $filteredHotels;
 }
+        // Get all hotels
+        $allHotels = require 'data/hotels.php';
+        // Get filtered and sorted hotels
+        $hotels = filterAndSortHotels($allHotels);
 ?>
