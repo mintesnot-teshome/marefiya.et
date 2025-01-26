@@ -1,16 +1,25 @@
-<?php require ('partials/head.php') ?>
-<?php require ('partials/banner.php') ?>
+<?php require 'partials/head.php' ?>
+<?php require 'partials/banner.php' ?>
+<?php require 'filter-hotels.php'; 
+        // Get all hotels
+        $allHotels = require 'data/hotels.php';
+
+        // Get filtered and sorted hotels
+        $hotels = filterAndSortHotels($allHotels);?>
+
 <main>
     <div class="hotels-container">
         <aside class="filters">
             <h3>Filter Hotels</h3>
-            <form id="filter-form">
+            <form method="POST" action="" id="filter-form">
                 <div class="filter-group">
                     <label>Price Range</label>
-                    <input type="range" min="1000" max="20000" step="500" id="price-range">
+                    <input type="range" name="price" min="1000" max="20000" step="500" id="price-range"
+                        value="<?= htmlspecialchars($_POST['price'] ?? '20000') ?>">
                     <div class="price-display">
                         <span>1,000 ETB</span>
-                        <span id="price-value">10,000 ETB</span>
+                        <span id="price-value"><?= isset($_POST['price']) ? number_format($_POST['price']) : '20,000' ?>
+                            ETB</span>
                         <span>20,000 ETB</span>
                     </div>
                 </div>
@@ -19,84 +28,77 @@
                     <label>Location</label>
                     <select name="location" id="location-filter">
                         <option value="">All Cities</option>
-                        <option value="addis-ababa">Addis Ababa</option>
-                        <option value="jimma">Jimma</option>
-                        <option value="bahir-dar">Bahir Dar</option>
-                        <option value="gondar">Gondar</option>
-                        <option value="hawassa">Hawassa</option>
-                        <option value="lalibela">Lalibela</option>
-                        <option value="wolaita-sodo">Wolaita Sodo</option>
+                        <?php foreach ($locations as $value => $name): ?>
+                        <option value="<?= $value ?>" <?= ($_POST['location'] ?? '') === $value ? 'selected' : '' ?>>
+                            <?= $name ?>
+                        </option>
+                        <?php endforeach; ?>
                     </select>
                 </div>
 
                 <div class="filter-group">
                     <label>Star Rating</label>
+                    <?php foreach ([5, 4, 3] as $star): ?>
+                    <?php $checked = in_array($star, $_POST['stars'] ?? []) ? 'checked' : '' ?>
                     <div class="star-filter">
-                        <input type="checkbox" id="5-star" value="5">
-                        <label for="5-star">5 Star</label>
+                        <input type="checkbox" name="stars[]" id="<?= $star ?>-star" value="<?= $star ?>"
+                            <?= $checked ?>>
+                        <label for="<?= $star ?>-star"><?= $star ?> Star</label>
                     </div>
-                    <div class="star-filter">
-                        <input type="checkbox" id="4-star" value="4">
-                        <label for="4-star">4 Star</label>
-                    </div>
-                    <div class="star-filter">
-                        <input type="checkbox" id="3-star" value="3">
-                        <label for="3-star">3 Star</label>
-                    </div>
+                    <?php endforeach; ?>
                 </div>
 
                 <div class="filter-group">
                     <label>Amenities</label>
+                    <?php foreach ($amenities as $value => $label): ?>
+                    <?php $checked = in_array($value, $_POST['amenities'] ?? []) ? 'checked' : '' ?>
                     <div class="amenity-filter">
-                        <input type="checkbox" id="wifi" value="wifi">
-                        <label for="wifi">Free WiFi</label>
+                        <input type="checkbox" name="amenities[]" id="<?= strtolower(str_replace(' ', '-', $value)) ?>"
+                            value="<?= $value ?>" <?= $checked ?>>
+                        <label for="<?= strtolower(str_replace(' ', '-', $value)) ?>"><?= $label ?></label>
                     </div>
-                    <div class="amenity-filter">
-                        <input type="checkbox" id="pool" value="pool">
-                        <label for="pool">Swimming Pool</label>
-                    </div>
-                    <div class="amenity-filter">
-                        <input type="checkbox" id="spa" value="spa">
-                        <label for="spa">Spa</label>
-                    </div>
-                    <div class="amenity-filter">
-                        <input type="checkbox" id="restaurant" value="restaurant">
-                        <label for="restaurant">Restaurant</label>
-                    </div>
+                    <?php endforeach; ?>
                 </div>
 
                 <button type="submit" class="apply-filters">Apply Filters</button>
             </form>
         </aside>
-
         <section class="hotels-list">
             <div class="hotels-header">
                 <h2>Available Hotels</h2>
-                <select id="sort-hotels">
-                    <option value="price-low">Price: Low to High</option>
-                    <option value="price-high">Price: High to Low</option>
-                    <option value="rating">Rating</option>
-                </select>
+                <form method="POST" id="sort-form">
+                    <select name="sort" id="sort-hotels">
+                        <option value="price-low" <?= ($_POST['sort'] ?? '') === 'price-low' ? 'selected' : '' ?>>Price:
+                            Low to High</option>
+                        <option value="price-high" <?= ($_POST['sort'] ?? '') === 'price-high' ? 'selected' : '' ?>>
+                            Price: High to Low</option>
+                        <option value="rating" <?= ($_POST['sort'] ?? '') === 'rating' ? 'selected' : '' ?>>Rating
+                        </option>
+                    </select>
+                </form>
             </div>
-            <?php $hotels=require 'data/hotels.php' ; ?>
-            < <div class="hotel-grid">
+
+            <div class="hotel-grid">
                 <?php foreach ($hotels as $hotelId => $hotel): ?>
                 <div class="hotel-card">
-                    <img src="/src/images/<?= $hotel['images'][0] ?>" alt="<?= $hotel['name'] ?>">
-                    <h3><?= $hotel['name'] ?></h3>
-                    <p><?= $hotel['location'] ?></p>
+                    <img src="/src/images/<?= htmlspecialchars($hotel['images'][0]) ?>"
+                        alt="<?= htmlspecialchars($hotel['name']) ?>">
+                    <h3><?= htmlspecialchars($hotel['name']) ?></h3>
+                    <p><?= htmlspecialchars($hotel['location']) ?></p>
                     <p class="price">From <?= number_format($hotel['price']) ?> ETB/night</p>
                     <div class="hotel-preview">
                         <div class="rating"><?= str_repeat('★', $hotel['rating']) ?></div>
                         <p class="amenities">
-                            <?= implode(' • ', array_column(array_slice($hotel['amenities'], 0, 3), 'name')) ?></p>
+                            <?= implode(' • ', array_column(array_slice($hotel['amenities'], 0, 3), 'name')) ?>
+                        </p>
                     </div>
                     <a href="/hotel-details?hotel=<?= $hotelId ?>" class="view-details-btn">View Details</a>
                 </div>
                 <?php endforeach; ?>
-    </div>
-
-    </section>
+            </div>
+        </section>
     </div>
 </main>
-<?php require ('partials/footer.php') ?>
+
+<?php require 'partials/footer.php' ?>
+<script src="js/hotels.js"></script>
