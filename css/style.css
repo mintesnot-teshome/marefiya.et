@@ -15,7 +15,6 @@
     --shadow-color: rgba(0,0,0,0.1);
     --hover-color: #1a252f;
 }
-
 /* Dark theme variables */
 [data-theme="dark"] {
     --bg-color: #1a1a1a;
