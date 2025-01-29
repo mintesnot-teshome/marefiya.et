@@ -1,4 +1,4 @@
-# Marefiya Hotel Booking Website
+# Marefiya Hotel Booking System
 
 ## Description
 
