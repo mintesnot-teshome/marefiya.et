@@ -147,7 +147,7 @@ return [
         'price' => 3000,
         'rating' => 3,
         'description' => 'Central Jimma Hotel provides comfortable and affordable accommodations in the heart of Jimma, with easy access to local attractions.',
-        'images' => ['central-jimma-hotel.jpg', 'jimma-room-1.jpg', 'jimma-restaurant-1.jpg'],
+        'images' => ['central-jimma-hotel.jpg', 'jimma-room-1.jpg', 'jimma-pool-1.jpg'],
         'amenities' => [
             ['icon' => '🍽️', 'name' => 'Restaurant'],
             ['icon' => '📶', 'name' => 'Free WiFi'],

@@ -70,7 +70,6 @@
                     <input type="radio" id="chapa" name="payment_method" value="chapa" required>
                     <label for="chapa" class="payment-label">
                         <img src="src/images/chapa-logo.png" alt="Chapa" class="payment-logo">
-                        <span>Chapa</span>
                     </label>
                 </div>
 
@@ -78,7 +77,6 @@
                     <input type="radio" id="santimpay" name="payment_method" value="santimpay" required>
                     <label for="santimpay" class="payment-label">
                         <img src="src/images/santimpay-logo.png" alt="SantimPay" class="payment-logo">
-                        <span>SantimPay</span>
                     </label>
                 </div>
             </div>

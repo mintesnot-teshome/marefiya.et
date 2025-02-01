@@ -123,6 +123,7 @@
     cursor: pointer;
     font-size: 1.1rem;
     transition: background-color 0.2s;
+    text-decoration: none;
 }
 
 .book-now-btn:hover {
