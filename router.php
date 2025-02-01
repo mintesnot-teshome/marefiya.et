@@ -11,6 +11,8 @@ $routes = [
     '/hotels' => 'controllers/hotels.php',
     '/hotel-details' => 'controllers/hotel-details.php',
     '/search' => 'controllers/search.php',
+    '/booking' => 'controllers/booking.php',
+    
 ];
 
 function routeToController($uri, $routes)

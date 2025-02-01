@@ -47,7 +47,7 @@
         </div>
 
         <div class="book-now-section">
-            <button class="book-now-btn">Book Now</button>
+            <a href="/booking" class="book-now-btn">Book Now</a>
         </div>
     </section>
 </main>
