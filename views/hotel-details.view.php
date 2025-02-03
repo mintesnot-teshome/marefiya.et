@@ -60,4 +60,4 @@ function changeImage(src) {
 const hotelData = <?= json_encode($hotel) ?>;
 </script>
 
-<?php require ('partials/footer.php') ?>
+<?php require ('partials/footer.php')?>
