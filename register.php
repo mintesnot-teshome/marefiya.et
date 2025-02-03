@@ -7,7 +7,7 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
     $phone = $_POST['phone'];
     $password = $_POST['password'];
     
-    // In a real application, you would:
+    // In a real application, we would:
     // 1. Validate all inputs
     // 2. Hash the password
     // 3. Check if email already exists

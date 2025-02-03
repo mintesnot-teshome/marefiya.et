@@ -5,7 +5,7 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
     $email = $_POST['email'];
     $password = $_POST['password'];
     
-    // In a real application, you would validate against a database
+    // In a real application, we would validate against a database
     // For this example, we'll use a hardcoded user
     $valid_email = "test@example.com";
     $valid_password = "password123";
