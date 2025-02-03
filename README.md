@@ -2,34 +2,62 @@
 
 ## Description
 
-Marefiya is a web-based hotel booking system that allows users to easily book hotel rooms online. The system provides a user-friendly interface for customers to browse rooms, check availability, and make reservations, while giving hotel administrators tools to manage bookings and room inventory.
-
-## Technologies Used
-
-- HTML5
-- CSS3
-- JavaScript
-- PHP
+Marefiya is a modern Ethiopian hotel booking platform that showcases hotels across major cities in Ethiopia. The system provides an intuitive interface for browsing and booking hotels.
 
 ## Features
 
-- **User Features:**
-  - Browse available rooms and view details
-  - Check room availability for specific dates
-  - Make room reservations
-  - View booking history
-  - User registration and authentication
-  
-- **Admin Features:**
-  - Manage room inventory
-  - View and handle booking requests
-  - Update room status and availability
-  - Manage user accounts
-  - Generate booking reports
+### User Interface
+
+- Responsive design for all screen sizes
+- Dark/light theme toggle
+- Dynamic search functionality
+- Detailed hotel listings with images
+- Advanced filtering options
+  - Price range
+  - Location
+  - Star rating
+  - Amenities
+
+### Hotel Features
+
+- Comprehensive hotel details
+  - High-quality image galleries
+  - Amenity listings
+  - Pricing information
+  - Contact details
+- Location-based hotel search
+- Rating system
+- Price filtering
+
+### Core Functionality
+
+- Hotel search and filtering
+- Detailed hotel views
+- Booking system
+- User authentication
+- Responsive image galleries
+- Theme customization
+
+## Technology Stack
+
+### Frontend
+
+- HTML5
+- CSS3 (with custom properties for theming)
+- JavaScript
+- Font Awesome icons
+
+### Backend
+
+- PHP
+- File-based data storage
+
+### Project Structure
 
 ## Usage
 
 1. **For Users:**
+
    - Visit the website
    - Create an account or log in
    - Browse available rooms
@@ -40,3 +68,12 @@ Marefiya is a web-based hotel booking system that allows users to easily book ho
    - Manage bookings and room inventory
    - Handle user requests
    - Generate reports
+
+## Contributing
+
+Contributions are welcome! Please feel free to submit a pull request.
+
+## License
+
+This project is open-sourced under the MIT License - see the LICENSE file for more details.
+
