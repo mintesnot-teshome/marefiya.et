@@ -60,7 +60,7 @@
         <div class="form-group">
             <label for="phone">Phone Number:</label>
             <input type="tel" id="phone" name="phone" required class="form-control"
-                placeholder="Enter your phone number">
+                placeholder="Enter your phone number" >
         </div>
 
         <div class="form-group payment-section">
