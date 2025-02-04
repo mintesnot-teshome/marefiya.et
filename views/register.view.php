@@ -30,7 +30,7 @@
             </div>
             <button type="submit" class="auth-btn">Register</button>
         </form>
-        H<p>Already have an account? <a href="/login">Login Here</a></p>
+        <p>Already have an account? <a href="/login">Login Here</a></p>
     </div>
 </main>
 <?php require ('partials/footer.php') ?>
