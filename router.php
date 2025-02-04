@@ -13,7 +13,6 @@ $routes = [
     '/search' => 'controllers/search.php',
     '/booking' => 'controllers/booking.php',
     
-    
 ];
 
 function routeToController($uri, $routes)
