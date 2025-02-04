@@ -2,7 +2,7 @@
 <?php require 'partials/banner.php' ?>
 <?php require 'filter-hotels.php' ?>
 
-<main>
+<main> 
     <div class="hotels-container">
         <aside class="filters">
             <h3>Filter Hotels</h3>
