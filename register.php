@@ -14,7 +14,9 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
     // 4. Store in database:
     // 5. Send verification email:
     // For this example, we'll just redirect to login:
-    
+    $_SESSION['registration_success'] = true;
+    header("Location: /login");
+    exit();
     
 }
 ?>
