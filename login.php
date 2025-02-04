@@ -1,7 +1,9 @@
 <?php
 session_start();
 
-
+if ($_SERVER["REQUEST_METHOD"] == "POST") {
+    $email = $_POST['email'];
+    $password = $_POST['password'];
     
     // In a real application, we would validate against a database.
     // For this example, we will use a hardcoded user.
