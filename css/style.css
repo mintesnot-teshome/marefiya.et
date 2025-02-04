@@ -624,7 +624,6 @@ footer {
   }
 }
 
-
 .hotels-container {
   display: flex;
   max-width: 1400px;
@@ -638,7 +637,7 @@ footer {
   background: var(--card-bg);
   padding: 1.5rem;
   border-radius: 8px;
-  box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
   height: fit-content;
   border: 1px solid var(--border-color);
 }
@@ -753,17 +752,15 @@ footer {
   overflow: hidden;
 }
 
-
-
 /* Responsive adjustments */
 @media (max-width: 768px) {
   .hotel-actions {
-      flex-direction: column;
-      gap: 0.5rem;
+    flex-direction: column;
+    gap: 0.5rem;
   }
   .view-details-btn {
-      width: 100%;
-      padding: 0.7rem 1rem;
+    width: 100%;
+    padding: 0.7rem 1rem;
   }
 }
 
@@ -780,4 +777,4 @@ footer {
   margin-top: auto;
   padding: 1rem;
   border-top: 1px solid var(--border-color);
-} 
+}
