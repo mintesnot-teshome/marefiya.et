@@ -6,7 +6,7 @@
         <p>Your trusted partner in discovering Ethiopia's finest accommodations</p>
     </section>
 
-    <section class="about-content">
+    <section class="about-content" >
         <div class="about-section">
             <h2>Our Story</h2>
             <p>Marefiya was founded with a vision to make hotel booking in Ethiopia seamless and accessible. We partner

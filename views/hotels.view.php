@@ -67,7 +67,7 @@
                             Low to High</option>
                         <option value="price-high" <?= ($_POST['sort'] ?? '') === 'price-high' ? 'selected' : '' ?>>
                             Price: High to Low</option>
-                        <option value="rating" <?= ($_POST['sort'] ?? '') === 'rating' ? 'selected' : '' ?>>Rating
+                        <option value="rating" <?= ($_POST['sort'] ?? '') === 'rating' ? 'selected' : '' ?>>Rating 
                         </option>
                     </select>
                 </form>
