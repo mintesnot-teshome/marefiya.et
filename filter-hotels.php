@@ -68,3 +68,4 @@ function filterAndSortHotels($allHotels) {
         // Get filtered and sorted hotels
         $hotels = filterAndSortHotels($allHotels);
 ?>
+
