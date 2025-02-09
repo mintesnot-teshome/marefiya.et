@@ -6,7 +6,8 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
     $password = $_POST['password'];
     
     // In a real application, we would validate against a database.
-    // For this example, we'll use a hardcoded user.
+    // For this example, we will use a hardcoded user.
+    
     $valid_email = "test@example.com";
     $valid_password = "password123";
     
@@ -18,6 +19,7 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
     } else {
         header("Location: /login?error=invalid");
         exit();
+    
     }
 }
 ?>
