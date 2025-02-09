@@ -49,7 +49,7 @@ function filterAndSortHotels($allHotels) {
         });
 
         // Sort hotels
-        usort($filteredHotels, function($a, $b) use ($sort) {
+        usort($filteredHotels, callback: function($a, $b) use ($sort) {
             switch ($sort) {
                 case 'price-high':
                     return $b['price'] - $a['price'];
